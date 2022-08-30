@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mastermind</title>
+	<link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+	<h1>Mastermind</h1>
+	<div class="center">Realizzato da Filippo Graziano</div>
+
+	<div id="mainpage">
+		<nav>
+			<input type="button" value="Start" onclick="newgame()">
+			<br>
+				<button id="orange" value="0" onclick="setcolor('orange','p1')"></button>
+				<button id="blue" 	value="1" onclick="setcolor('blue'  ,'p2')"></button>
+				<button id="yellow" value="2" onclick="setcolor('yellow','p3')"></button>
+				<button id="green" 	value="3" onclick="setcolor('green' ,'p4')"></button>
+				<button id="purple" value="4" onclick="setcolor('purple','p5')"></button>
+				<button id="black" 	value="5" onclick="setcolor('black' ,'p6')"></button>
+		</nav>
+
+		<article>
+			<div id="first">
+				<fieldset id="code1"></fieldset>
+				<fieldset id="code2"></fieldset>
+				<fieldset id="code3"></fieldset>
+				<fieldset id="code4"></fieldset>
+			<div id="row1"></div>
+			</div>
+		</article>
+
+		<aside>
+			<header>
+				<b>Come funziona</b>
+				<br>
+				- 4 colori da indovinare.
+				<br>
+				- 6 colori tra cui scegliere.
+				<br>
+				- 12 tentativi.
+				<br>
+				- Se c'è un cerchio verde intorno è nel posto corretto.
+				<br>
+				- Se c'è un cerchio rosso è nel posto sbagliato.
+				<br>
+				- Se c'e un cerchio nero non è presente nel codice.
+			</header>
+		</aside>
+	</div>
+	<script src = "script.js"></script>
+</body>
+</html>
